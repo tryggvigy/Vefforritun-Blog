@@ -7,6 +7,10 @@
   src: url('../public/fonts/Quicksand/Quicksand-Regular.otf') format('opentype');
 }
 
+body {
+  font-family: "QuicksandNormal";
+}
+
 a {
   font-family: "QuicksandNormal";
 }
