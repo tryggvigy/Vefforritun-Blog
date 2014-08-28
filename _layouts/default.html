@@ -1,36 +1,44 @@
-<!DOCTYPE html>
+
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
   {% include head.html %}
 
-  <body>
-
-    <h3 class="masthead-title">
-      <a href="/" title="Home">{{ site.title }}</a>
-      {% for page in site.pages_list %}
-        &nbsp;&nbsp;&nbsp;
-        <small><a href="{{ page[1]  }}">{{ page[0] }}</a></small>
-      {% endfor %}
-    </h3>
+<body>
 
 
-    <div class="container content">
-      <div class="masthead">
-        <h3 class="masthead-title">
-          <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
-          <small>{{ site.tagline }}</small>
-        </h3>
-      </div>
+  <div class="wrapper">
 
-      {{ content }}
-      {% include comments.html %}
+    {% include nav.html %}
 
-      <div class="footer">
-        <p>
-          &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-        </p>
+    <div id="container">
+      <p class="tagline"></p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/tryggvigy" class="code">View TryggviGy on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          {{ content }}
+          {% include comments.html %}
+        </article>
       </div>
     </div>
-    {% include google_analytics.html %}
-  </body>
+
+    {% include footer.html %}
+
+  </div>
+  <!--<div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/tryggvigy/tryggvigy.github.io/tarball/master" class="tar">tar</a><a href="https://github.com/tryggvigy/tryggvigy.github.io/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>-->
+
+  {% include google_analytics.html %}
+
+</body>
 </html>

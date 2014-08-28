@@ -1,0 +1,13 @@
+---
+layout: post
+title: "test2"
+date: "2014-08-28"
+comments: True
+---
+
+### test nr.2
+
+- lets
+- make
+- it
+- work

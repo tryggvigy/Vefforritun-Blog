@@ -1,0 +1,8 @@
+<header>
+  <h1 class="title">
+    <a href="/" title="Home">{{ site.title }}</a>
+    {% for page in site.pages_list %}
+      <small><a href="{{ page[1]  }}">{{ page[0] }}</a></small>
+    {% endfor %}
+  </h1>
+</header>

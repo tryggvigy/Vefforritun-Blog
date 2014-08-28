@@ -7,11 +7,11 @@ port: 8888
 permalink:        pretty
 
 # Setup
-title:            tryggvigy.github.io
-tagline:          The Jekyll Butler
-url:              http://getpoole.com
+title:            TryggviGy
+tagline:          Blog for Vefforitun
+url:              http://tryggvigy.github.io
 paginate:         1
-baseurl:          http://tryggvigy.github.io/
+baseurl:          /
 author:
   name:           Mark Otto
   url:            https://twitter.com/mdo
