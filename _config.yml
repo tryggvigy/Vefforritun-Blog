@@ -1,13 +1,13 @@
 # Dependencies
 markdown:         redcarpet
 highlighter:         true
-port: 8888
+port: 8877
 
 # Permalinks
 permalink:        pretty
 
 # Setup
-title:            TryggviGy
+title:            Vefforritun 2014
 tagline:          Blog for Vefforitun
 url:              http://tryggvigy.github.io
 paginate:         1

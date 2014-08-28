@@ -449,9 +449,6 @@ a:hover {
 h1.title {
   margin: 30px 20px 10px;
   font-size: 60px;
-  font-weight: bold;
-  font-style: italic;
-  font-family:Georgia, serif;
   text-align: center;
 }
 
@@ -681,8 +678,8 @@ a.download-button span {
 }
 
 footer {
-  margin-bottom: 60px;
-  padding-bottom: 60px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 footer .owner {
@@ -703,15 +700,15 @@ footer .creds small {
 footer .owner .avatar {
   background-color: #666;
   display: block;
-  margin: -19px 10px 0 0;
-  width: 60px;
+  margin: -36px 30px 0 0;
+  width: 105px;
   float: left;
 }
 
 footer .owner img {
   display: block;
   border: 1px solid #2a2a2a;
-  margin: 5px;
+  margin: 7px;
 }
 
 footer .owner p {
