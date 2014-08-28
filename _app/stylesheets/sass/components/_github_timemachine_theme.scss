@@ -459,12 +459,12 @@ h1.title {
 
 #container {
   border: 1px solid #2a2a2a;
-  background: #ddd url(../images/pattern.png);
+  background: #ddd url(../static/images/pattern.png);
   box-shadow: 0 0 5px #b1b1b1;
 }
 
 p.tagline {
-  padding: 20px 20px 0;
+  padding: 10px 20px 0;
   color: #fff;
   font-size: 17px;
 }
@@ -547,7 +547,7 @@ p.tagline {
 }
 
 .download-bar a.code {
-  background: transparent url(../images/code.png) no-repeat 0 2px;
+  background: transparent url(../static/images/code.png) no-repeat 0 2px;
   padding-left: 35px;
   margin-top: 8px;
   display: block;
@@ -578,13 +578,13 @@ p.tagline {
   padding: 0px 27px;
   font-size: 18px;
   font-weight: bold;
-  font-family: "QuicksandNormal";
+  font-family: "QuicksandNormal"; /*!!!*/
 }
 
 .current-section a {
   float: right;
   text-indent: -10000px;
-  background: transparent url(../images/top.png) no-repeat 0 0;
+  background: transparent url(../static/images/top.png) no-repeat 0 0;
   width: 20px;
   height: 20px;
   opacity: 0.8;
@@ -607,7 +607,7 @@ p.tagline {
 
 a.zip,
 a.zip span {
-  background: transparent url(../images/zip.png) no-repeat 0 0;
+  background: transparent url(../static/images/zip.png) no-repeat 0 0;
   width: 30px;
   height: 21px;
   display: inline-block;
@@ -620,7 +620,7 @@ a.zip span {
 
 a.tar,
 a.tar span {
-  background: transparent url(../images/tar.png) no-repeat 0 0;
+  background: transparent url(../static/images/tar.png) no-repeat 0 0;
   width: 30px;
   height: 21px;
   display: inline-block;
@@ -632,7 +632,7 @@ a.tar span {
 }
 
 a.code {
-  background: transparent url(../images/code.png) no-repeat 0 2px;
+  background: transparent url(../static/images/code.png) no-repeat 0 2px;
   width: 30px;
   height: 21px;
   display: block;

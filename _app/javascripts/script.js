@@ -1,3 +1,4 @@
+/*jshint ignore: start*/
 (function($) {
 $(document).ready(function(){
 
@@ -50,3 +51,4 @@ $(document).ready(function(){
   })
 });
 })(jQuery)
+/*jshint ignore: end*/

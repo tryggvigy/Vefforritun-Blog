@@ -27,3 +27,17 @@ pages_list:
   About: '/navPages/about'
   Archive: '/navPages/archive'
   Feed: '/navPages/atom.xml'
+
+paths:
+  dist:
+    styles:
+      main: '/dist/css/'
+
+    js: '/dist/js/'
+
+    static :
+      img: '/dist/static/images/'
+      font: '/dist/static/fonts/'
+
+  navPages:
+    base: '/'

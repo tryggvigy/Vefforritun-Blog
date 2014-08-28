@@ -4,13 +4,22 @@
  <title>Vefforritun 2014</title>
  <link href="http://tryggvigy.github.io/atom.xml" rel="self"/>
  <link href="http://tryggvigy.github.io/"/>
- <updated>2014-08-28T18:24:16+00:00</updated>
+ <updated>2014-08-28T22:03:32+00:00</updated>
  <id>http://tryggvigy.github.io</id>
  <author>
    <name>Mark Otto</name>
    <email>markdotto@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>testSass</title>
+   <link href="http://tryggvigy.github.io//2014/08/28/testsass/"/>
+   <updated>2014-08-28T00:00:00+00:00</updated>
+   <id>http://tryggvigy.github.io/2014/08/28/testsass</id>
+   <content type="html">&lt;h1&gt;INTEGRATION DONE.&lt;/h1&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Hello World!</title>
