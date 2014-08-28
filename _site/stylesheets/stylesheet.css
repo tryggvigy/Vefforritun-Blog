@@ -575,8 +575,8 @@ p.tagline {
 }
 
 .current-section p {
-  padding: 5px 27px;
-  font-size: 24px;
+  padding: 0px 27px;
+  font-size: 18px;
   font-weight: bold;
   font-family: "QuicksandNormal";
 }
@@ -721,6 +721,7 @@ footer .owner p a {
 }
 
 /* Markdown */
+
 .markdown-body h1,
 .markdown-body h2,
 .markdown-body h3,
