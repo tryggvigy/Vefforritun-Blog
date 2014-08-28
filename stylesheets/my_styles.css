@@ -7,7 +7,7 @@
   src: url('../public/fonts/Quicksand/Quicksand-Regular.otf') format('opentype');
 }
 
-a, h1 {
+a {
   font-family: "QuicksandNormal";
 }
 
@@ -63,9 +63,9 @@ a, h1 {
 }
 
 /* Blog post or page title */
-.page-title,
-.post-title {
+.page-title, .post-title {
   margin-top: 0;
+  font-family: "QuicksandNormal";
 }
 .post-title a {
   color: #303030;
@@ -95,6 +95,6 @@ a, h1 {
   color: #05293e;
 }
 
-.current-selection p {
+.current-section p {
   font-family: "QuicksandNormal";
 }

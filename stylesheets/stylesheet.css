@@ -578,6 +578,7 @@ p.tagline {
   padding: 5px 27px;
   font-size: 24px;
   font-weight: bold;
+  font-family: "QuicksandNormal";
 }
 
 .current-section a {

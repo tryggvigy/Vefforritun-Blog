@@ -63,9 +63,9 @@ a {
 }
 
 /* Blog post or page title */
-.page-title,
-.post-title {
+.page-title, .post-title {
   margin-top: 0;
+  font-family: "QuicksandNormal";
 }
 .post-title a {
   color: #303030;
@@ -93,4 +93,8 @@ a {
 .creds small a {
   font-weight: bold;
   color: #05293e;
+}
+
+.current-section p {
+  font-family: "QuicksandNormal";
 }
