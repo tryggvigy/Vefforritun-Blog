@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>tryggvigy.github.io</title>
- <link href="http://getpoole.com/atom.xml" rel="self"/>
- <link href="http://getpoole.com/"/>
- <updated>2014-08-27T23:49:02+00:00</updated>
+ <link href="http://getpoole.comhttp://tryggvigy.github.io/atom.xml" rel="self"/>
+ <link href="http://getpoole.comhttp://tryggvigy.github.io/"/>
+ <updated>2014-08-28T00:18:46+00:00</updated>
  <id>http://getpoole.com</id>
  <author>
    <name>Mark Otto</name>
@@ -14,7 +14,7 @@
  
  <entry>
    <title>test</title>
-   <link href="http://getpoole.com//2014/08/27/test/"/>
+   <link href="http://getpoole.comhttp://tryggvigy.github.io//2014/08/27/test/"/>
    <updated>2014-08-27T00:00:00+00:00</updated>
    <id>http://getpoole.com/2014/08/27/test</id>
    <content type="html">&lt;h1&gt;My new test&lt;/h1&gt;
@@ -25,7 +25,7 @@
  
  <entry>
    <title>Introducing Poole</title>
-   <link href="http://getpoole.com//2014/01/02/introducing-poole/"/>
+   <link href="http://getpoole.comhttp://tryggvigy.github.io//2014/01/02/introducing-poole/"/>
    <updated>2014-01-02T00:00:00+00:00</updated>
    <id>http://getpoole.com/2014/01/02/introducing-poole</id>
    <content type="html">&lt;p&gt;&lt;em&gt;The Strange Case of Dr. Jekyll and Mr. Hyde&lt;/em&gt; tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel&amp;#39;s supporting cast is a man by the name of Mr. Poole, Dr. Jekyll&amp;#39;s loyal butler.&lt;/p&gt;
@@ -72,7 +72,7 @@
  
  <entry>
    <title>Example content</title>
-   <link href="http://getpoole.com//2014/01/01/example-content/"/>
+   <link href="http://getpoole.comhttp://tryggvigy.github.io//2014/01/01/example-content/"/>
    <updated>2014-01-01T00:00:00+00:00</updated>
    <id>http://getpoole.com/2014/01/01/example-content</id>
    <content type="html">&lt;div class=&quot;message&quot;&gt;
@@ -218,7 +218,7 @@ adder(2, 6);
  
  <entry>
    <title>What's Jekyll?</title>
-   <link href="http://getpoole.com//2013/12/31/whats-jekyll/"/>
+   <link href="http://getpoole.comhttp://tryggvigy.github.io//2013/12/31/whats-jekyll/"/>
    <updated>2013-12-31T00:00:00+00:00</updated>
    <id>http://getpoole.com/2013/12/31/whats-jekyll</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/master/README.markdown&quot;&gt;the project&amp;#39;s readme&lt;/a&gt;:&lt;/p&gt;

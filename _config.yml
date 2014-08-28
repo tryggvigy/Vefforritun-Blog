@@ -1,6 +1,7 @@
 # Dependencies
 markdown:         redcarpet
 highlighter:         true
+port: 8888
 
 # Permalinks
 permalink:        pretty
@@ -10,7 +11,7 @@ title:            tryggvigy.github.io
 tagline:          The Jekyll Butler
 url:              http://getpoole.com
 paginate:         1
-baseurl:          /
+baseurl:          http://tryggvigy.github.io/
 author:
   name:           Mark Otto
   url:            https://twitter.com/mdo
