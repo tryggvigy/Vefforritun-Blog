@@ -10,7 +10,7 @@ comments: True
 Here are a few examples of semantic html tags:
 
 ~~~html
-<header>, <nav>, <article>, <img>, <h1>
+  <header>, <nav>, <article>, <img>, <h1>
 ~~~
 
 - Semantic tags clearly define the purpouse and meaning of content inside of them.
@@ -23,13 +23,13 @@ Here are a few examples of semantic html tags:
 ## So what is NOT semantic HTML code?
 
 ~~~html
-<div>, <span>
+  <div>, <span>
 ~~~
 
 - Some tags do not "tell" you anything about the content inside of them, these tags are "non-semantic"
 or "presentation only" tags.
 
-- There is nothing _wrong_ with using these tags and infact can often be very useful and are widely used.
+- There is nothing _wrong_ with using these tags and in fact can often be very useful and are widely used.
 
 - The reasoning behind using semantic HTML tags is to
 avoid "div-hell" on webpages.
@@ -39,7 +39,6 @@ avoid "div-hell" on webpages.
 
 Think twice about the tags you use.
 
-When writing HTML, try to use the tag that makes the most sence. This will make your code more readable.
+When writing HTML, try to use the tag that makes the most sense. This will make your code more readable.
 
 Good luck with project 1!
-:beer:

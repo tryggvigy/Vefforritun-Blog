@@ -4,7 +4,7 @@
  <title>Vefforritun 2014</title>
  <link href="http://tryggvigy.github.io/atom.xml" rel="self"/>
  <link href="http://tryggvigy.github.io/"/>
- <updated>2014-08-29T17:18:05+00:00</updated>
+ <updated>2014-08-29T20:02:45+00:00</updated>
  <id>http://tryggvigy.github.io</id>
  <author>
    <name>Mark Otto</name>
@@ -20,7 +20,7 @@
    <content type="html">&lt;h2&gt;What is a semantic tag?&lt;/h2&gt;
 
 &lt;p&gt;Here are a few examples of semantic html tags:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;header&amp;gt;, &amp;lt;nav&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;img&amp;gt;, &amp;lt;h1&amp;gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;  &amp;lt;header&amp;gt;, &amp;lt;nav&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;img&amp;gt;, &amp;lt;h1&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;Semantic tags clearly define the purpouse and meaning of content inside of them.&lt;/li&gt;
@@ -33,12 +33,12 @@
 &lt;script async src=&quot;//codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
 &lt;h2&gt;So what is NOT semantic HTML code?&lt;/h2&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;div&amp;gt;, &amp;lt;span&amp;gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;  &amp;lt;div&amp;gt;, &amp;lt;span&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Some tags do not &amp;quot;tell&amp;quot; you anything about the content inside of them, these tags are &amp;quot;non-semantic&amp;quot;
 or &amp;quot;presentation only&amp;quot; tags.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;There is nothing &lt;em&gt;wrong&lt;/em&gt; with using these tags and infact can often be very useful and are widely used.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;There is nothing &lt;em&gt;wrong&lt;/em&gt; with using these tags and in fact can often be very useful and are widely used.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;The reasoning behind using semantic HTML tags is to
 avoid &amp;quot;div-hell&amp;quot; on webpages.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -47,10 +47,9 @@ avoid &amp;quot;div-hell&amp;quot; on webpages.&lt;/p&gt;&lt;/li&gt;
 
 &lt;p&gt;Think twice about the tags you use.&lt;/p&gt;
 
-&lt;p&gt;When writing HTML, try to use the tag that makes the most sence. This will make your code more readable.&lt;/p&gt;
+&lt;p&gt;When writing HTML, try to use the tag that makes the most sense. This will make your code more readable.&lt;/p&gt;
 
-&lt;p&gt;Good luck with project 1!
-:beer:&lt;/p&gt;
+&lt;p&gt;Good luck with project 1!&lt;/p&gt;
 </content>
  </entry>
  
