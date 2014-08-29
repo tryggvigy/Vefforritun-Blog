@@ -135,6 +135,9 @@ gulp.task('watch', function() {
     gulp.watch([paths.static.src], ['copy', 'jekyll']).on('change', function(evt) {
         changeEvent(evt);
     });
+    gulp.watch(['_posts/**/*'], [ 'jekyll']).on('change', function(evt) {
+        changeEvent(evt);
+    });
 });
 
 
