@@ -3,8 +3,13 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Carry on!
-</p>
+Hey there!
+
+My name is Tryggvi and I study software engineering at the [University of Iceland](http://www.hi.is)
+
+On this site I will post stuff related to web development. I'll try to post as often as I can,
+but I have to do my homework too!
+
+Carry on!
 
 Thanks for reading!
