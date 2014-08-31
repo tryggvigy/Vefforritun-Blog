@@ -4,7 +4,7 @@
  <title>Vefforritun 2014</title>
  <link href="http://tryggvigy.github.io/atom.xml" rel="self"/>
  <link href="http://tryggvigy.github.io/"/>
- <updated>2014-08-29T20:02:45+00:00</updated>
+ <updated>2014-08-31T12:39:07+00:00</updated>
  <id>http://tryggvigy.github.io</id>
  <author>
    <name>Mark Otto</name>
@@ -23,22 +23,25 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;  &amp;lt;header&amp;gt;, &amp;lt;nav&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;img&amp;gt;, &amp;lt;h1&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
-&lt;li&gt;Semantic tags clearly define the purpouse and meaning of content inside of them.&lt;/li&gt;
+&lt;li&gt;Semantic tags clearly define the purpouse and meaning of content they hold.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h5&gt;In the codepen below is an example of semantic html code:&lt;/h5&gt;
 
-&lt;p data-height=&quot;268&quot; data-theme-id=&quot;8166&quot; data-slug-hash=&quot;qkEbt&quot; data-default-tab=&quot;result&quot; class='codepen'&gt;See the Pen &lt;a href='http://codepen.io/tryggvigy/pen/qkEbt/'&gt;qkEbt&lt;/a&gt; by Tryggvi Gylfason (&lt;a href='http://codepen.io/tryggvigy'&gt;@tryggvigy&lt;/a&gt;) on &lt;a href='http://codepen.io'&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;p data-height=&quot;500&quot; data-theme-id=&quot;8166&quot; data-slug-hash=&quot;qkEbt&quot; data-default-tab=&quot;html&quot; class='codepen'&gt;See the Pen &lt;a href='http://codepen.io/tryggvigy/pen/qkEbt/'&gt;qkEbt&lt;/a&gt; by Tryggvi Gylfason (&lt;a href='http://codepen.io/tryggvigy'&gt;@tryggvigy&lt;/a&gt;) on &lt;a href='http://codepen.io'&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 
 &lt;script async src=&quot;//codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;em&gt;check the Result tab to see the page&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2&gt;So what is NOT semantic HTML code?&lt;/h2&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;  &amp;lt;div&amp;gt;, &amp;lt;span&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Some tags do not &amp;quot;tell&amp;quot; you anything about the content inside of them, these tags are &amp;quot;non-semantic&amp;quot;
-or &amp;quot;presentation only&amp;quot; tags.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;There is nothing &lt;em&gt;wrong&lt;/em&gt; with using these tags and in fact can often be very useful and are widely used.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Some tags do not &amp;quot;tell&amp;quot; you anything about the content inside of them These
+tags are &amp;quot;non-semantic&amp;quot; or &amp;quot;presentation only&amp;quot; tags.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;There is nothing &lt;em&gt;wrong&lt;/em&gt; with using these tags and in fact can often be very
+useful and are widely used.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;The reasoning behind using semantic HTML tags is to
 avoid &amp;quot;div-hell&amp;quot; on webpages.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -47,9 +50,37 @@ avoid &amp;quot;div-hell&amp;quot; on webpages.&lt;/p&gt;&lt;/li&gt;
 
 &lt;p&gt;Think twice about the tags you use.&lt;/p&gt;
 
-&lt;p&gt;When writing HTML, try to use the tag that makes the most sense. This will make your code more readable.&lt;/p&gt;
+&lt;p&gt;When writing HTML, try to use the tag that makes the most sense each time.
+This will make your code more readable
+and easier to manage.&lt;/p&gt;
 
 &lt;p&gt;Good luck with project 1!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Basic website</title>
+   <link href="http://tryggvigy.github.io//2014/08/29/basic-website/"/>
+   <updated>2014-08-29T00:00:00+00:00</updated>
+   <id>http://tryggvigy.github.io/2014/08/29/basic-website</id>
+   <content type="html">&lt;h2&gt;It&amp;#39;s simple to create a website.&lt;/h2&gt;
+
+&lt;p&gt;below you can see the most basic website that is able to display
+Icelandic characters.&lt;/p&gt;
+
+&lt;p&gt;&lt;div data-height=&quot;268&quot; data-theme-id=&quot;8166&quot; data-slug-hash=&quot;zJigd&quot; data-default-tab=&quot;html&quot; class='codepen'&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;basic site.&amp;lt;/title&amp;gt;
+    &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    æðifrábært!
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See the Pen &lt;a href='http://codepen.io/tryggvigy/pen/zJigd/'&gt;zJigd&lt;/a&gt; by Tryggvi Gylfason (&lt;a href='http://codepen.io/tryggvigy'&gt;@tryggvigy&lt;/a&gt;) on &lt;a href='http://codepen.io'&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;&lt;script async src=&quot;//codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 </content>
  </entry>
  
