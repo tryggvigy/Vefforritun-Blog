@@ -67,52 +67,67 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2014/08/29/semantic-html5-tags-and-how-to-use-them/" target="_self">
-        Semantic html5 tags and how to use them.
+      <a href="/2014/08/31/wtf-is-utf8/" target="_self">
+        WTF is UTF-8?
       </a>
     </h1>
 
-    <span class="post-date">29 Aug 2014</span>
+    <span class="post-date">31 Aug 2014</span>
 
-    <h2>What is a semantic tag?</h2>
+    <blockquote>
+<p>UTF-8 is a compromise character encoding that can be as compact as ASCII (if the file is just plain English text) but can also contain any unicode characters (with some increase in file size). UTF stands for Unicode Transformation Format.</p>
+</blockquote>
 
-<p>Here are a few examples of semantic html tags:</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html">  &lt;header&gt;, &lt;nav&gt;, &lt;article&gt;, &lt;img&gt;, &lt;h1&gt;
+<h2>Why do we need to specify a character encoding?</h2>
+
+<p>Here is an interesting video where Tom Scott from Computerphile talks about
+unicode and HOW we can fit almost all of the worlds written symbols into a single character encoding:</p>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/MijmeoH9LT4" frameborder="0" allowfullscreen></iframe>
+
+<p>you can check out computerphile&#39;s youtube channel here:</p>
+
+<p>It&#39;s a great show, I watch it all the time <font size="3">😋</font>.</p>
+
+<h2>Nerdy stuff</h2>
+
+<blockquote>
+<p>For those interested, the smiley face above is a unicode symbol with <br>
+the utf-8 binary representation 11110000:10011111:10011000:10001011 <br>
+<a href="http://www.fileformat.info/info/unicode/char/1f60b/index.htm">See for yourself!</a> <br>
+We can calculate the utf-8 decimal number from this as Tom does in the video:</p>
+</blockquote>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    [11110]000:[10]011111:[10]011000:[10]001011
+</code></pre></div>
+<ol>
+<li><p>We can see the binary code is divided into 4 sections of 8 bits each.
+That is 4 bytes (1 byte = 8 bits).</p></li>
+<li><p>Strip away the bits in box-quotes [ ]:</p>
+
+<ul>
+<li>[11110] which are telling us that this character is represented by 4 bytes. (the number of ones).</li>
+<li>[10] which means <em>&quot;Please include me in the character!&quot;</em></li>
+</ul></li>
+<li><p>Now we are left with:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    000:011111:011000:001011
 </code></pre></div>
 <ul>
-<li>Semantic tags clearly define the purpouse and meaning of the content they hold.</li>
-</ul>
+<li>which in <a href="http://www.binaryhexconverter.com/binary-to-decimal-converter">Decimal numbers</a> is 128523.</li>
+</ul></li>
+<li><p>Wait look! <a href="http://www.isthisthingon.org/unicode/index.phtml?glyph=1F60B">Thats exactly our dear smiley character!</a> (checkout the HTML column..)</p></li>
+</ol>
 
-<h5>In the codepen below is an example of semantic html code:</h5>
+<p>Now look.</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html">  &lt;p&gt; We can type &amp;#128523; to display the smiley.&lt;/p&gt;
 
-<p data-height="500" data-theme-id="8166" data-slug-hash="qkEbt" data-default-tab="html" class='codepen'>See the Pen <a href='http://codepen.io/tryggvigy/pen/qkEbt/'>qkEbt</a> by Tryggvi Gylfason (<a href='http://codepen.io/tryggvigy'>@tryggvigy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+  &lt;p&gt;OR we can copy paste the symbol itself: 😋&lt;/p&gt;
 
-<script async src="//codepen.io/assets/embed/ei.js"></script>
-
-<p><em>check the Result tab to see the page</em></p>
-
-<h2>So what is NOT semantic HTML code?</h2>
-<div class="highlight"><pre><code class="language-html" data-lang="html">  &lt;div&gt;, &lt;span&gt;
+  &lt;p&gt;
+    Bonus: we can also type the
+    Hexademic representation of 128523 to get the smiley
+    face: &amp;#x1f60b;
+  &lt;/p&gt;
 </code></pre></div>
-<ul>
-<li><p>Some tags do not &quot;tell&quot; you anything about the content inside of them These
-tags are &quot;non-semantic&quot; or &quot;presentation only&quot; tags.</p></li>
-<li><p>There is nothing <em>wrong</em> with using these tags and in fact can often be very
-useful and are widely used.</p></li>
-<li><p>The reasoning behind using semantic HTML tags is to
-avoid &quot;div-hell&quot; on webpages.</p></li>
-</ul>
-
-<h2>Lessons learned</h2>
-
-<p>Think twice about the tags you use.</p>
-
-<p>When writing HTML, try to use the tag that makes the most sense each time.
-This will make your code more readable
-and easier to manage.</p>
-
-<p>Good luck with project 1!</p>
-
   </div>
   
 </div>

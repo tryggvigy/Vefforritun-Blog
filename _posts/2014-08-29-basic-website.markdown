@@ -23,11 +23,3 @@ Icelandic characters.
 </code></pre>
 <p>See the Pen <a href='http://codepen.io/tryggvigy/pen/zJigd/'>zJigd</a> by Tryggvi Gylfason (<a href='http://codepen.io/tryggvigy'>@tryggvigy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 </div><script async src="//codepen.io/assets/embed/ei.js"></script>
-
-## Why do we need to specify a character encoding?
-
-here is an interesting video where Tom Scott from Computerphile talks about
-unicode and HOW we can fit all the worlds symbols into a single character encoding:
-
-
-<embed width="420" height="315" src="http://www.youtube.com/watch?v=MijmeoH9LT4">

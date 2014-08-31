@@ -4,13 +4,74 @@
  <title>Vefforritun 2014</title>
  <link href="http://tryggvigy.github.io/atom.xml" rel="self"/>
  <link href="http://tryggvigy.github.io/"/>
- <updated>2014-08-31T14:07:03+00:00</updated>
+ <updated>2014-08-31T16:08:43+00:00</updated>
  <id>http://tryggvigy.github.io</id>
  <author>
    <name>Mark Otto</name>
    <email>markdotto@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>WTF is UTF-8?</title>
+   <link href="http://tryggvigy.github.io//2014/08/31/wtf-is-utf8/"/>
+   <updated>2014-08-31T00:00:00+00:00</updated>
+   <id>http://tryggvigy.github.io/2014/08/31/wtf-is-utf8</id>
+   <content type="html">&lt;blockquote&gt;
+&lt;p&gt;UTF-8 is a compromise character encoding that can be as compact as ASCII (if the file is just plain English text) but can also contain any unicode characters (with some increase in file size). UTF stands for Unicode Transformation Format.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2&gt;Why do we need to specify a character encoding?&lt;/h2&gt;
+
+&lt;p&gt;Here is an interesting video where Tom Scott from Computerphile talks about
+unicode and HOW we can fit almost all of the worlds written symbols into a single character encoding:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/MijmeoH9LT4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;you can check out computerphile&amp;#39;s youtube channel here:&lt;/p&gt;
+
+&lt;p&gt;It&amp;#39;s a great show, I watch it all the time &lt;font size=&quot;3&quot;&gt;😋&lt;/font&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Nerdy stuff&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;For those interested, the smiley face above is a unicode symbol with &lt;br&gt;
+the utf-8 binary representation 11110000:10011111:10011000:10001011 &lt;br&gt;
+&lt;a href=&quot;http://www.fileformat.info/info/unicode/char/1f60b/index.htm&quot;&gt;See for yourself!&lt;/a&gt; &lt;br&gt;
+We can calculate the utf-8 decimal number from this as Tom does in the video:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    [11110]000:[10]011111:[10]011000:[10]001011
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;We can see the binary code is divided into 4 sections of 8 bits each.
+That is 4 bytes (1 byte = 8 bits).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Strip away the bits in box-quotes [ ]:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[11110] which are telling us that this character is represented by 4 bytes. (the number of ones).&lt;/li&gt;
+&lt;li&gt;[10] which means &lt;em&gt;&amp;quot;Please include me in the character!&amp;quot;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Now we are left with:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    000:011111:011000:001011
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;which in &lt;a href=&quot;http://www.binaryhexconverter.com/binary-to-decimal-converter&quot;&gt;Decimal numbers&lt;/a&gt; is 128523.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Wait look! &lt;a href=&quot;http://www.isthisthingon.org/unicode/index.phtml?glyph=1F60B&quot;&gt;Thats exactly our dear smiley character!&lt;/a&gt; (checkout the HTML column..)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now look.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;  &amp;lt;p&amp;gt; We can type &amp;amp;#128523; to display the smiley.&amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;OR we can copy paste the symbol itself: 😋&amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    Bonus: we can also type the
+    Hexademic representation of 128523 to get the smiley
+    face: &amp;amp;#x1f60b;
+  &amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
  
  <entry>
    <title>Semantic html5 tags and how to use them.</title>
@@ -81,13 +142,6 @@ Icelandic characters.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;See the Pen &lt;a href='http://codepen.io/tryggvigy/pen/zJigd/'&gt;zJigd&lt;/a&gt; by Tryggvi Gylfason (&lt;a href='http://codepen.io/tryggvigy'&gt;@tryggvigy&lt;/a&gt;) on &lt;a href='http://codepen.io'&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;&lt;script async src=&quot;//codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2&gt;Why do we need to specify a character encoding?&lt;/h2&gt;
-
-&lt;p&gt;here is an interesting video where Tom Scott from Computerphile talks about
-unicode and HOW we can fit all the worlds symbols into a single character encoding:&lt;/p&gt;
-
-&lt;p&gt;&lt;embed width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/watch?v=MijmeoH9LT4&quot;&gt;&lt;/p&gt;
 </content>
  </entry>
  
