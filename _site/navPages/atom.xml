@@ -4,7 +4,7 @@
  <title>Vefforritun 2014</title>
  <link href="http://tryggvigy.github.io/atom.xml" rel="self"/>
  <link href="http://tryggvigy.github.io/"/>
- <updated>2014-08-31T16:10:35+00:00</updated>
+ <updated>2014-08-31T16:33:34+00:00</updated>
  <id>http://tryggvigy.github.io</id>
  <author>
    <name>Mark Otto</name>
@@ -18,7 +18,8 @@
    <updated>2014-08-31T00:00:00+00:00</updated>
    <id>http://tryggvigy.github.io/2014/08/31/wtf-is-utf8</id>
    <content type="html">&lt;blockquote&gt;
-&lt;p&gt;UTF-8 is a compromise character encoding that can be as compact as ASCII (if the file is just plain English text) but can also contain any unicode characters (with some increase in file size). UTF stands for Unicode Transformation Format.&lt;/p&gt;
+&lt;p&gt;UTF-8 is a compromise character encoding that can be as compact as ASCII (if the file is just plain English text) but can also contain any unicode characters (with some increase in file size). UTF stands for Unicode Transformation Format.
+&lt;small&gt;&lt;a href=&quot;http://www.fileformat.info/info/unicode/utf8.htm&quot;&gt;http://www.fileformat.info/info/unicode/utf8.htm&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2&gt;Why do we need to specify a character encoding?&lt;/h2&gt;

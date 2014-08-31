@@ -6,6 +6,7 @@ comments: True
 ---
 
 >UTF-8 is a compromise character encoding that can be as compact as ASCII (if the file is just plain English text) but can also contain any unicode characters (with some increase in file size). UTF stands for Unicode Transformation Format.
+> <small><a href="http://www.fileformat.info/info/unicode/utf8.htm">http://www.fileformat.info/info/unicode/utf8.htm</a></small>
 
 ## Why do we need to specify a character encoding?
 
