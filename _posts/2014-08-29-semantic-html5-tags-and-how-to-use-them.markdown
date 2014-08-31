@@ -13,7 +13,7 @@ Here are a few examples of semantic html tags:
   <header>, <nav>, <article>, <img>, <h1>
 ~~~
 
-- Semantic tags clearly define the purpouse and meaning of content they hold.
+- Semantic tags clearly define the purpouse and meaning of the content they hold.
 
 ##### In the codepen below is an example of semantic html code:
 
