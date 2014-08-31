@@ -26,7 +26,7 @@ It's a great show, I watch it all the time <font size="3">😋</font>.
 > For those interested, the smiley face above is a unicode symbol with <br>
 > the utf-8 binary representation 11110000:10011111:10011000:10001011 <br>
 >[See for yourself!](http://www.fileformat.info/info/unicode/char/1f60b/index.htm) <br>
-> We can calculate the utf-8 decimal number from this as Tom does in the video:
+> Lets calculate the unicode decimal codepoint for this character just as Tom does in the video:
 
 ~~~  
     [11110]000:[10]011111:[10]011000:[10]001011
