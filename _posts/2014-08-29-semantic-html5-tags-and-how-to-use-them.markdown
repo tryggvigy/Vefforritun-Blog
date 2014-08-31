@@ -5,7 +5,7 @@ date: "2014-08-29"
 comments: True
 ---
 
-## What is a semantic tag?
+## What are semantic tags/elements?
 
 Here are a few examples of semantic html tags:
 
@@ -35,7 +35,7 @@ tags are "non-semantic" or "presentation only" tags.
 useful and are widely used.
 
 - The reasoning behind using semantic HTML tags is to
-avoid "div-hell" on webpages.
+avoid "div-hell" on webpages (excessive use of the <div> tag.)
 
 
 ## Lessons learned

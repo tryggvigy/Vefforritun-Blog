@@ -4,7 +4,7 @@
  <title>Vefforritun 2014</title>
  <link href="http://tryggvigy.github.io/atom.xml" rel="self"/>
  <link href="http://tryggvigy.github.io/"/>
- <updated>2014-08-31T18:17:01+00:00</updated>
+ <updated>2014-08-31T21:30:49+00:00</updated>
  <id>http://tryggvigy.github.io</id>
  <author>
    <name>Mark Otto</name>
@@ -81,7 +81,7 @@ That is 4 bytes (1 byte = 8 bits).&lt;/p&gt;&lt;/li&gt;
    <link href="http://tryggvigy.github.io//2014/08/29/semantic-html5-tags-and-how-to-use-them/"/>
    <updated>2014-08-29T00:00:00+00:00</updated>
    <id>http://tryggvigy.github.io/2014/08/29/semantic-html5-tags-and-how-to-use-them</id>
-   <content type="html">&lt;h2&gt;What is a semantic tag?&lt;/h2&gt;
+   <content type="html">&lt;h2&gt;What are semantic tags/elements?&lt;/h2&gt;
 
 &lt;p&gt;Here are a few examples of semantic html tags:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;  &amp;lt;header&amp;gt;, &amp;lt;nav&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;img&amp;gt;, &amp;lt;h1&amp;gt;
@@ -107,7 +107,7 @@ tags are &amp;quot;non-semantic&amp;quot; or &amp;quot;presentation only&amp;quo
 &lt;li&gt;&lt;p&gt;There is nothing &lt;em&gt;wrong&lt;/em&gt; with using these tags and in fact can often be very
 useful and are widely used.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;The reasoning behind using semantic HTML tags is to
-avoid &amp;quot;div-hell&amp;quot; on webpages.&lt;/p&gt;&lt;/li&gt;
+avoid &amp;quot;div-hell&amp;quot; on webpages (excessive use of the &lt;div&gt; tag.)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2&gt;Lessons learned&lt;/h2&gt;
