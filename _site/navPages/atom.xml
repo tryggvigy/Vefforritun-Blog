@@ -4,7 +4,7 @@
  <title>Vefforritun 2014</title>
  <link href="http://tryggvigy.github.io/atom.xml" rel="self"/>
  <link href="http://tryggvigy.github.io/"/>
- <updated>2014-08-31T21:30:49+00:00</updated>
+ <updated>2014-09-01T12:30:30+00:00</updated>
  <id>http://tryggvigy.github.io</id>
  <author>
    <name>Mark Otto</name>
@@ -74,6 +74,63 @@ That is 4 bytes (1 byte = 8 bits).&lt;/p&gt;&lt;/li&gt;
     face: &amp;amp;#x1f60b;
   &amp;lt;/p&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Web development glossary</title>
+   <link href="http://tryggvigy.github.io//2014/08/31/web-development-glossary/"/>
+   <updated>2014-08-31T00:00:00+00:00</updated>
+   <id>http://tryggvigy.github.io/2014/08/31/web-development-glossary</id>
+   <content type="html">&lt;h2&gt;Glossary of terms&lt;/h2&gt;
+
+&lt;h3&gt;Markup languages&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SGML : &lt;a href=&quot;http://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language#XML&quot;&gt;Standard Generalized Markup Language - the mother of XML and HTML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;XML : &lt;a href=&quot;http://www.htmlgoodies.com/beyond/xml/article.php/3473531&quot;&gt;EXtensible Markup Language&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;HTML : &lt;a href=&quot;http://en.wikipedia.org/wiki/HTML&quot;&gt;HyperText Markup Language&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HTML element/tag :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;      &amp;lt;div&amp;gt;, &amp;lt;html&amp;gt;, &amp;lt;body&amp;gt;, lots more...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;attribute : &lt;a href=&quot;http://www.w3schools.com/html/html_attributes.asp&quot;&gt;A part of an element that provides additional information about that element.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Style sheet languages&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CSS : &lt;a href=&quot;http://www.w3.org/Style/CSS/Overview.en.html&quot;&gt;Cascading Style Sheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LESS : &lt;a href=&quot;http://lesscss.org/&quot;&gt;CSS extension language &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SASS : &lt;a href=&quot;http://sass-lang.com/&quot;&gt;Another CSS extension language&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Encoding&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ASCII : &lt;a href=&quot;http://www.computerhope.com/jargon/a/ascii.htm&quot;&gt;American Standard Code for Information Interchange - encoding standard.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Unicode : &lt;a href=&quot;http://www.unicode.org/standard/WhatIsUnicode.html&quot;&gt;Ubrella term for consistent encoding standards and the Unicode Consortium.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;UTF-8 : &lt;a href=&quot;http://en.wikipedia.org/wiki/UTF-8&quot;&gt;&amp;#39;U&amp;#39; from Universal Character Set + Transformation Format 8-bit - A specific way to encode all the characters in the Unicode character set.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Javascript&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;JS : &lt;a href=&quot;http://en.wikipedia.org/wiki/JavaScript&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;jQuery : &lt;a href=&quot;http://jquery.com/&quot;&gt;Very popular javascript library, mainly used for DOM manipulation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Miscellaneous&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the DOM : &lt;a href=&quot;http://css-tricks.com/dom/&quot;&gt;Document Object Model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PHP : &lt;a href=&quot;http://en.wikipedia.org/wiki/PHP&quot;&gt;Hypertext Preprocessor (original name was: Personal Home Page)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;W3C : &lt;a href=&quot;http://webdesign.about.com/od/w3c/a/what_is_w3c.htm&quot;&gt;World Wide Web Consortium&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
  </entry>
  
  <entry>
