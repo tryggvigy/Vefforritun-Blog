@@ -67,63 +67,70 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2014/08/31/web-development-glossary/" target="_self">
-        Web development glossary
+      <a href="/2014/08/31/wtf-is-utf8/" target="_self">
+        WTF is UTF-8?
       </a>
     </h1>
 
     <span class="post-date">31 Aug 2014</span>
 
-    <h2>Glossary of terms</h2>
+    <blockquote>
+<p>UTF-8 is a compromise character encoding that can be as compact as ASCII (if the file is just plain English text) but can also contain any unicode characters (with some increase in file size). UTF stands for Unicode Transformation Format.
+<small><a href="http://www.fileformat.info/info/unicode/utf8.htm">http://www.fileformat.info/info/unicode/utf8.htm</a></small></p>
+</blockquote>
 
-<h3>Markup languages</h3>
+<h2>Why do we need to specify a character encoding?</h2>
+
+<p>Here is an interesting video where Tom Scott from Computerphile talks about
+unicode and HOW we can fit almost all of the worlds written symbols into a single character encoding:</p>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/MijmeoH9LT4" frameborder="0" allowfullscreen></iframe>
+
+<p>you can check out computerphile&#39;s youtube channel here:</p>
+
+<p><a href="https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA">https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA</a></p>
+
+<p>It&#39;s a great show, I watch it all the time <font size="3">😋</font>.</p>
+
+<h2>Nerdy stuff</h2>
+
+<blockquote>
+<p>For those interested, the smiley face above is a unicode symbol with <br>
+the utf-8 binary representation 11110000:10011111:10011000:10001011 <br>
+<a href="http://www.fileformat.info/info/unicode/char/1f60b/index.htm">See for yourself!</a> <br>
+Lets calculate the unicode decimal codepoint for this character just as Tom does in the video:</p>
+</blockquote>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    [11110]000:[10]011111:[10]011000:[10]001011
+</code></pre></div>
+<ol>
+<li><p>We can see the binary code is divided into 4 sections of 8 bits each.
+That is 4 bytes (1 byte = 8 bits).</p></li>
+<li><p>Strip away the bits in box-quotes [ ]:</p>
 
 <ul>
-<li>SGML : <a href="http://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language#XML">Standard Generalized Markup Language - the mother of XML and HTML</a></li>
-<li>XML : <a href="http://www.htmlgoodies.com/beyond/xml/article.php/3473531">EXtensible Markup Language</a></li>
-<li><p>HTML : <a href="http://en.wikipedia.org/wiki/HTML">HyperText Markup Language</a></p>
-
-<ul>
-<li>HTML element/tag :</li>
-</ul>
-<div class="highlight"><pre><code class="language-html" data-lang="html">      &lt;div&gt;, &lt;html&gt;, &lt;body&gt;, lots more...
+<li>[11110] which are telling us that this character is represented by 4 bytes. (the number of ones).</li>
+<li>[10] which means <em>&quot;Please include me in the character!&quot;</em></li>
+</ul></li>
+<li><p>Now we are left with:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    000:011111:011000:001011
 </code></pre></div>
 <ul>
-<li>attribute : <a href="http://www.w3schools.com/html/html_attributes.asp">A part of an element that provides additional information about that element.</a></li>
+<li>which in <a href="http://www.binaryhexconverter.com/binary-to-decimal-converter">Decimal numbers</a> is 128523.</li>
 </ul></li>
-</ul>
+<li><p>Wait look! <a href="http://www.isthisthingon.org/unicode/index.phtml?glyph=1F60B">Thats exactly our dear smiley character!</a> (checkout the HTML column..)</p></li>
+</ol>
 
-<h4>Style sheet languages</h4>
+<p>Now look.</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html">  &lt;p&gt; We can type &amp;#128523; to display the smiley.&lt;/p&gt;
 
-<ul>
-<li>CSS : <a href="http://www.w3.org/Style/CSS/Overview.en.html">Cascading Style Sheet</a></li>
-<li>LESS : <a href="http://lesscss.org/">CSS extension language </a></li>
-<li>SASS : <a href="http://sass-lang.com/">Another CSS extension language</a></li>
-</ul>
+  &lt;p&gt;OR we can copy paste the symbol itself: 😋&lt;/p&gt;
 
-<h4>Encoding</h4>
-
-<ul>
-<li>ASCII : <a href="http://www.computerhope.com/jargon/a/ascii.htm">American Standard Code for Information Interchange - encoding standard.</a></li>
-<li>Unicode : <a href="http://www.unicode.org/standard/WhatIsUnicode.html">Ubrella term for consistent encoding standards and the Unicode Consortium.</a></li>
-<li>UTF-8 : <a href="http://en.wikipedia.org/wiki/UTF-8">&#39;U&#39; from Universal Character Set + Transformation Format 8-bit - A specific way to encode all the characters in the Unicode character set.</a></li>
-</ul>
-
-<h4>Javascript</h4>
-
-<ul>
-<li>JS : <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
-<li>jQuery : <a href="http://jquery.com/">Very popular javascript library, mainly used for DOM manipulation</a></li>
-</ul>
-
-<h4>Miscellaneous</h4>
-
-<ul>
-<li>the DOM : <a href="http://css-tricks.com/dom/">Document Object Model</a></li>
-<li>PHP : <a href="http://en.wikipedia.org/wiki/PHP">Hypertext Preprocessor (original name was: Personal Home Page)</a></li>
-<li>W3C : <a href="http://webdesign.about.com/od/w3c/a/what_is_w3c.htm">World Wide Web Consortium</a></li>
-</ul>
-
+  &lt;p&gt;
+    Bonus: we can also type the
+    Hexademic representation of 128523 to get the smiley
+    face: &amp;#x1f60b;
+  &lt;/p&gt;
+</code></pre></div>
   </div>
   
 </div>

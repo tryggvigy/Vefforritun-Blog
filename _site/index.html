@@ -67,70 +67,53 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2014/08/31/wtf-is-utf8/" target="_self">
-        WTF is UTF-8?
+      <a href="/2014/09/08/boxsizing-borderbox/" target="_self">
+        box-sizing: border-box
       </a>
     </h1>
 
-    <span class="post-date">31 Aug 2014</span>
+    <span class="post-date">08 Sep 2014</span>
 
-    <blockquote>
-<p>UTF-8 is a compromise character encoding that can be as compact as ASCII (if the file is just plain English text) but can also contain any unicode characters (with some increase in file size). UTF stands for Unicode Transformation Format.
-<small><a href="http://www.fileformat.info/info/unicode/utf8.htm">http://www.fileformat.info/info/unicode/utf8.htm</a></small></p>
-</blockquote>
-
-<h2>Why do we need to specify a character encoding?</h2>
-
-<p>Here is an interesting video where Tom Scott from Computerphile talks about
-unicode and HOW we can fit almost all of the worlds written symbols into a single character encoding:</p>
-
-<iframe width="560" height="315" src="//www.youtube.com/embed/MijmeoH9LT4" frameborder="0" allowfullscreen></iframe>
-
-<p>you can check out computerphile&#39;s youtube channel here:</p>
-
-<p><a href="https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA">https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA</a></p>
-
-<p>It&#39;s a great show, I watch it all the time <font size="3">😋</font>.</p>
-
-<h2>Nerdy stuff</h2>
+    <h2>What is box-sizing?</h2>
 
 <blockquote>
-<p>For those interested, the smiley face above is a unicode symbol with <br>
-the utf-8 binary representation 11110000:10011111:10011000:10001011 <br>
-<a href="http://www.fileformat.info/info/unicode/char/1f60b/index.htm">See for yourself!</a> <br>
-Lets calculate the unicode decimal codepoint for this character just as Tom does in the video:</p>
+<p>The &quot;box model&quot; in CSS works like this:</p>
+
+<p>width + padding + border = actual visible/rendered width of box</p>
+
+<p>height + padding + border = actual visible/rendered height of box</p>
+
+<p><small><em>Chris Coyier</em></small> <a href="http://css-tricks.com/box-sizing/">http://css-tricks.com/box-sizing/</a></p>
 </blockquote>
-<div class="highlight"><pre><code class="language-text" data-lang="text">    [11110]000:[10]011111:[10]011000:[10]001011
-</code></pre></div>
-<ol>
-<li><p>We can see the binary code is divided into 4 sections of 8 bits each.
-That is 4 bytes (1 byte = 8 bits).</p></li>
-<li><p>Strip away the bits in box-quotes [ ]:</p>
 
-<ul>
-<li>[11110] which are telling us that this character is represented by 4 bytes. (the number of ones).</li>
-<li>[10] which means <em>&quot;Please include me in the character!&quot;</em></li>
-</ul></li>
-<li><p>Now we are left with:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">    000:011111:011000:001011
-</code></pre></div>
-<ul>
-<li>which in <a href="http://www.binaryhexconverter.com/binary-to-decimal-converter">Decimal numbers</a> is 128523.</li>
-</ul></li>
-<li><p>Wait look! <a href="http://www.isthisthingon.org/unicode/index.phtml?glyph=1F60B">Thats exactly our dear smiley character!</a> (checkout the HTML column..)</p></li>
-</ol>
+<p><img src="http://www.geekchamp.com/upload/Tutorials/marginvspadding.png" alt="http://www.geekchamp.com/upload/Tutorials/marginvspadding.png"></p>
 
-<p>Now look.</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html">  &lt;p&gt; We can type &amp;#128523; to display the smiley.&lt;/p&gt;
+<p>The box-sizing property is used to tell the browser what the sizing properties (width and height) should include. <br>
+It&#39;s default value is box-sizing: content-box</p>
 
-  &lt;p&gt;OR we can copy paste the symbol itself: 😋&lt;/p&gt;
+<p>The border-box value (as opposed to the content-box default) makes the final rendered box the declared width, and any border and padding cut inside the box.</p>
 
-  &lt;p&gt;
-    Bonus: we can also type the
-    Hexademic representation of 128523 to get the smiley
-    face: &amp;#x1f60b;
-  &lt;/p&gt;
-</code></pre></div>
+<h2>Using box-sizing: border-box</h2>
+
+<p>Here you can see the same code, with and without box-sizing: border-box;</p>
+
+<h3>Without border-box</h3>
+
+<p data-height="266" data-theme-id="8166" data-slug-hash="fJgjk" data-default-tab="result" data-user="tryggvigy" class='codepen'>See the Pen <a href='http://codepen.io/tryggvigy/pen/fJgjk/'>fJgjk</a> by Tryggvi Gylfason (<a href='http://codepen.io/tryggvigy'>@tryggvigy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+<p>This is no good!</p>
+
+<h3>With border-box</h3>
+
+<p data-height="268" data-theme-id="8166" data-slug-hash="EjCty" data-default-tab="result" data-user="tryggvigy" class='codepen'>See the Pen <a href='http://codepen.io/tryggvigy/pen/EjCty/'>EjCty</a> by Tryggvi Gylfason (<a href='http://codepen.io/tryggvigy'>@tryggvigy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+<p>Above you can see that no matter the padding I set, the border-width I use, the margin I set on the parent element, box1 will always be 50% of its parent width and box2 will always be 40% of the width.
+Also they will always have 10% space between them.</p>
+
   </div>
   
 </div>
