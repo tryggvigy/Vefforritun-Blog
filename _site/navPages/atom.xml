@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Vefforritun 2014</title>
- <link href="http://tryggvigy.github.io/atom.xml" rel="self"/>
- <link href="http://tryggvigy.github.io/"/>
- <updated>2014-11-29T01:09:44+00:00</updated>
+ <link href="http://tryggvigy.github.io/vefforritunatom.xml" rel="self"/>
+ <link href="http://tryggvigy.github.io/vefforritun"/>
+ <updated>2014-11-29T01:59:12+00:00</updated>
  <id>http://tryggvigy.github.io</id>
  <author>
    <name>Tryggvi Gylfason</name>
@@ -14,7 +14,7 @@
  
  <entry>
    <title>box-sizing: border-box</title>
-   <link href="http://tryggvigy.github.io//2014/09/08/boxsizing-borderbox/"/>
+   <link href="http://tryggvigy.github.io/vefforritun/2014/09/08/boxsizing-borderbox/"/>
    <updated>2014-09-08T00:00:00+00:00</updated>
    <id>http://tryggvigy.github.io/2014/09/08/boxsizing-borderbox</id>
    <content type="html">&lt;h2&gt;What is box-sizing?&lt;/h2&gt;
@@ -61,7 +61,7 @@ Also they will always have 10% space between them.&lt;/p&gt;
  
  <entry>
    <title>WTF is UTF-8?</title>
-   <link href="http://tryggvigy.github.io//2014/08/31/wtf-is-utf8/"/>
+   <link href="http://tryggvigy.github.io/vefforritun/2014/08/31/wtf-is-utf8/"/>
    <updated>2014-08-31T00:00:00+00:00</updated>
    <id>http://tryggvigy.github.io/2014/08/31/wtf-is-utf8</id>
    <content type="html">&lt;blockquote&gt;
@@ -125,7 +125,7 @@ That is 4 bytes (1 byte = 8 bits).&lt;/p&gt;&lt;/li&gt;
  
  <entry>
    <title>Web development glossary</title>
-   <link href="http://tryggvigy.github.io//2014/08/31/web-development-glossary/"/>
+   <link href="http://tryggvigy.github.io/vefforritun/2014/08/31/web-development-glossary/"/>
    <updated>2014-08-31T00:00:00+00:00</updated>
    <id>http://tryggvigy.github.io/2014/08/31/web-development-glossary</id>
    <content type="html">&lt;h2&gt;Glossary of terms&lt;/h2&gt;
@@ -182,7 +182,7 @@ That is 4 bytes (1 byte = 8 bits).&lt;/p&gt;&lt;/li&gt;
  
  <entry>
    <title>Semantic html5 tags and how to use them.</title>
-   <link href="http://tryggvigy.github.io//2014/08/29/semantic-html5-tags-and-how-to-use-them/"/>
+   <link href="http://tryggvigy.github.io/vefforritun/2014/08/29/semantic-html5-tags-and-how-to-use-them/"/>
    <updated>2014-08-29T00:00:00+00:00</updated>
    <id>http://tryggvigy.github.io/2014/08/29/semantic-html5-tags-and-how-to-use-them</id>
    <content type="html">&lt;h2&gt;What are semantic tags/elements?&lt;/h2&gt;
@@ -228,7 +228,7 @@ and easier to manage.&lt;/p&gt;
  
  <entry>
    <title>Basic website</title>
-   <link href="http://tryggvigy.github.io//2014/08/29/basic-website/"/>
+   <link href="http://tryggvigy.github.io/vefforritun/2014/08/29/basic-website/"/>
    <updated>2014-08-29T00:00:00+00:00</updated>
    <id>http://tryggvigy.github.io/2014/08/29/basic-website</id>
    <content type="html">&lt;h2&gt;It&amp;#39;s simple to create a website.&lt;/h2&gt;
@@ -254,7 +254,7 @@ Icelandic characters.&lt;/p&gt;
  
  <entry>
    <title>Hello World!</title>
-   <link href="http://tryggvigy.github.io//2014/08/28/hello-world/"/>
+   <link href="http://tryggvigy.github.io/vefforritun/2014/08/28/hello-world/"/>
    <updated>2014-08-28T00:00:00+00:00</updated>
    <id>http://tryggvigy.github.io/2014/08/28/hello-world</id>
    <content type="html">&lt;h1&gt;Fyrsta Færslan&lt;/h1&gt;
