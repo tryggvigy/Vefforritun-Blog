@@ -11,7 +11,7 @@ title:            Vefforritun 2014
 tagline:          Blog about Vefforitun
 url:              http://tryggvigy.github.io
 paginate:         1
-baseurl:          /vefforritun
+baseurl:          /Vefforritun-Blog
 author:
   name:           Tryggvi Gylfason
   email:          tryggvigy@gmail.com
@@ -23,20 +23,20 @@ github:
 
 
 pages_list:
-  About: '/vefforritun/navPages/about'
-  Archive: '/vefforritun/navPages/archive'
-  Feed: '/vefforritun/navPages/atom.xml'
+  About: '/Vefforritun-Blog/navPages/about'
+  Archive: '/Vefforritun-Blog/navPages/archive'
+  Feed: '/Vefforritun-Blog/navPages/atom.xml'
 
 paths:
   dist:
     styles:
-      main: '/vefforritun/dist/css/'
+      main: '/Vefforritun-Blog/dist/css/'
 
-    js: '/vefforritun/dist/js/'
+    js: '/Vefforritun-Blog/dist/js/'
 
     static :
-      img: '/vefforritun/dist/static/images/'
-      font: '/vefforritun/dist/static/fonts/'
+      img: '/Vefforritun-Blog/dist/static/images/'
+      font: '/Vefforritun-Blog/dist/static/fonts/'
 
   navPages:
-    base: '/vefforritun'
+    base: '/Vefforritun-Blog'
