@@ -1,0 +1,42 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:         true
+port: 8877
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Vefforritun 2014
+tagline:          Blog about Vefforitun
+url:              http://tryggvigy.github.io
+paginate:         1
+baseurl:          /
+author:
+  name:           Tryggvi Gylfason
+  email:          tryggvigy@gmail.com
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/poole/poole
+
+
+pages_list:
+  About: '/navPages/about'
+  Archive: '/navPages/archive'
+  Feed: '/navPages/atom.xml'
+
+paths:
+  dist:
+    styles:
+      main: '/dist/css/'
+
+    js: '/dist/js/'
+
+    static :
+      img: '/dist/static/images/'
+      font: '/dist/static/fonts/'
+
+  navPages:
+    base: '/'

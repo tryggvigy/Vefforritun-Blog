@@ -1,0 +1,64 @@
+---
+layout: post
+title: "WTF is UTF-8?"
+date: "2014-08-31"
+comments: True
+---
+
+>UTF-8 is a compromise character encoding that can be as compact as ASCII (if the file is just plain English text) but can also contain any unicode characters (with some increase in file size). UTF stands for Unicode Transformation Format.
+> <small><a href="http://www.fileformat.info/info/unicode/utf8.htm">http://www.fileformat.info/info/unicode/utf8.htm</a></small>
+
+## Why do we need to specify a character encoding?
+
+Here is an interesting video where Tom Scott from Computerphile talks about
+unicode and HOW we can fit almost all of the worlds written symbols into a single character encoding:
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/MijmeoH9LT4" frameborder="0" allowfullscreen></iframe>
+
+you can check out computerphile's youtube channel here:
+
+[https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA](https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA)
+
+It's a great show, I watch it all the time <font size="3">😋</font>.
+
+## Nerdy stuff
+
+> For those interested, the smiley face above is a unicode symbol with <br>
+> the utf-8 binary representation 11110000:10011111:10011000:10001011 <br>
+>[See for yourself!](http://www.fileformat.info/info/unicode/char/1f60b/index.htm) <br>
+> Lets calculate the unicode decimal codepoint for this character just as Tom does in the video:
+
+~~~  
+    [11110]000:[10]011111:[10]011000:[10]001011
+~~~
+
+
+1. We can see the binary code is divided into 4 sections of 8 bits each.
+That is 4 bytes (1 byte = 8 bits).
+
+2. Strip away the bits in box-quotes [ ]:
+    - [11110] which are telling us that this character is represented by 4 bytes. (the number of ones).
+    - [10] which means _"Please include me in the character!"_
+
+3. Now we are left with:
+
+    ~~~  
+        000:011111:011000:001011
+    ~~~
+    - which in [Decimal numbers](http://www.binaryhexconverter.com/binary-to-decimal-converter) is 128523.
+
+4. Wait look! [Thats exactly our dear smiley character!](http://www.isthisthingon.org/unicode/index.phtml?glyph=1F60B) (checkout the HTML column..)
+
+Now look.
+
+~~~html
+  <p> We can type &#128523; to display the smiley.</p>
+
+  <p>OR we can copy paste the symbol itself: 😋</p>
+
+  <p>
+    Bonus: we can also type the
+    Hexademic representation of 128523 to get the smiley
+    face: &#x1f60b;
+  </p>
+~~~
