@@ -1,0 +1,10 @@
+<header>
+  <h1 class="title">
+    <a href="{{ site.baseurl }}/" title="Home" target="_self">{{ site.title }}</a>
+  </h1>
+  <nav>
+    {% for page in site.pages_list %}
+      <a class="TG_nav-link" target="_self" href="{{ page[1]  }}">{{ page[0] }}</a>
+    {% endfor %}
+  </nav>
+</header>

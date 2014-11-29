@@ -1,0 +1,155 @@
+a {
+  font-family: "QuicksandNormal";
+}
+.title a {
+  font-family: "QuicksandNormal";
+  color: black;
+}
+
+.TG_nav-link {
+  color: #63a52a;
+  font-size: 2rem;
+  padding-left: 30px;
+}
+
+.wrapper {
+  width: 60%;
+}
+/* Related posts */
+
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
+}
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+  h3 {
+    margin-top: 0;
+  }
+  li {
+    small {
+    font-size: 75%;
+    color: #999;
+    }
+
+    a:hover {
+      color: #268bd2;
+      text-decoration: none;
+
+      small {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.page {
+  margin-bottom: 4em;
+
+  li a {
+    font-weight: bold;
+    color: #FF0000;
+    &:hover {
+      font-weight: bold;
+      color: #ff4646;
+    }
+  }
+}
+.post {
+  margin-bottom: 4em;
+}
+
+.post {
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  a {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+  }
+}
+
+/* Blog post or page title */
+
+.page-title, .post-title {
+  margin-top: 0;
+  font-family: "QuicksandNormal";
+}
+.post-title a {
+  font-family: "QuicksandNormal";
+  color: #303030;
+  &:hover {
+    color: #464646;
+  }
+}
+/* Meta data line below post title */
+
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+}
+.creds small a {
+  font-weight: bold;
+  color: #05293e;
+}
+.current-section p {
+  font-family: "QuicksandNormal";
+}
+/*
+ * Pagination
+ *
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+ * there are no more previous or next posts to show.
+ */
+
+.pagination {
+  overflow: hidden;
+  /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  color: #BDBDBD;
+  font-family: "QuicksandNormal";
+  text-align: center;
+}
+/* Pagination items can be `span`s or `a`s */
+
+.pagination-item {
+  display: block;
+  padding: 1rem;
+
+  &:first-child {
+    margin-bottom: -1px;
+  }
+}
+a.pagination-item {
+  color: rgb(31, 0, 255);
+
+  /* Only provide a hover state for linked pagination items */
+  &:hover {
+    color: rgb(81, 70, 205);
+  }
+}
+
+
+@media (min-width: 30em) {
+  .pagination {
+    font-size: 1.5rem;
+  }
+  .pagination-item {
+    float: left;
+    width: 45%;
+
+    &:first-child {
+      margin-bottom: 0;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    &:last-child {
+      margin-left: -1px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+}

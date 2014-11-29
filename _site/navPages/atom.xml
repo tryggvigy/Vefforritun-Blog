@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Vefforritun 2014</title>
+ <link href="http://tryggvigy.github.io/vefforritunatom.xml" rel="self"/>
+ <link href="http://tryggvigy.github.io/vefforritun"/>
+ <updated>2014-11-29T02:12:15+00:00</updated>
+ <id>http://tryggvigy.github.io</id>
+ <author>
+   <name>Tryggvi Gylfason</name>
+   <email>tryggvigy@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>box-sizing: border-box</title>
+   <link href="http://tryggvigy.github.io/vefforritun/2014/09/08/boxsizing-borderbox/"/>
+   <updated>2014-09-08T00:00:00+00:00</updated>
+   <id>http://tryggvigy.github.io/2014/09/08/boxsizing-borderbox</id>
+   <content type="html">&lt;h2&gt;What is box-sizing?&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The &amp;quot;box model&amp;quot; in CSS works like this:&lt;/p&gt;
+
+&lt;p&gt;width + padding + border = actual visible/rendered width of box&lt;/p&gt;
+
+&lt;p&gt;height + padding + border = actual visible/rendered height of box&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;Chris Coyier&lt;/em&gt;&lt;/small&gt; &lt;a href=&quot;http://css-tricks.com/box-sizing/&quot;&gt;http://css-tricks.com/box-sizing/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.geekchamp.com/upload/Tutorials/marginvspadding.png&quot; alt=&quot;http://www.geekchamp.com/upload/Tutorials/marginvspadding.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;The box-sizing property is used to tell the browser what the sizing properties (width and height) should include. &lt;br&gt;
+It&amp;#39;s default value is box-sizing: content-box&lt;/p&gt;
+
+&lt;p&gt;The border-box value (as opposed to the content-box default) makes the final rendered box the declared width, and any border and padding cut inside the box.&lt;/p&gt;
+
+&lt;h2&gt;Using box-sizing: border-box&lt;/h2&gt;
+
+&lt;p&gt;Here you can see the same code, with and without box-sizing: border-box;&lt;/p&gt;
+
+&lt;h3&gt;Without border-box&lt;/h3&gt;
+
+&lt;p data-height=&quot;266&quot; data-theme-id=&quot;8166&quot; data-slug-hash=&quot;fJgjk&quot; data-default-tab=&quot;result&quot; data-user=&quot;tryggvigy&quot; class='codepen'&gt;See the Pen &lt;a href='http://codepen.io/tryggvigy/pen/fJgjk/'&gt;fJgjk&lt;/a&gt; by Tryggvi Gylfason (&lt;a href='http://codepen.io/tryggvigy'&gt;@tryggvigy&lt;/a&gt;) on &lt;a href='http://codepen.io'&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;script async src=&quot;//codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;This is no good!&lt;/p&gt;
+
+&lt;h3&gt;With border-box&lt;/h3&gt;
+
+&lt;p data-height=&quot;268&quot; data-theme-id=&quot;8166&quot; data-slug-hash=&quot;EjCty&quot; data-default-tab=&quot;result&quot; data-user=&quot;tryggvigy&quot; class='codepen'&gt;See the Pen &lt;a href='http://codepen.io/tryggvigy/pen/EjCty/'&gt;EjCty&lt;/a&gt; by Tryggvi Gylfason (&lt;a href='http://codepen.io/tryggvigy'&gt;@tryggvigy&lt;/a&gt;) on &lt;a href='http://codepen.io'&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;script async src=&quot;//codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Above you can see that no matter the padding I set, the border-width I use, the margin I set on the parent element, box1 will always be 50% of its parent width and box2 will always be 40% of the width.
+Also they will always have 10% space between them.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>WTF is UTF-8?</title>
+   <link href="http://tryggvigy.github.io/vefforritun/2014/08/31/wtf-is-utf8/"/>
+   <updated>2014-08-31T00:00:00+00:00</updated>
+   <id>http://tryggvigy.github.io/2014/08/31/wtf-is-utf8</id>
+   <content type="html">&lt;blockquote&gt;
+&lt;p&gt;UTF-8 is a compromise character encoding that can be as compact as ASCII (if the file is just plain English text) but can also contain any unicode characters (with some increase in file size). UTF stands for Unicode Transformation Format.
+&lt;small&gt;&lt;a href=&quot;http://www.fileformat.info/info/unicode/utf8.htm&quot;&gt;http://www.fileformat.info/info/unicode/utf8.htm&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2&gt;Why do we need to specify a character encoding?&lt;/h2&gt;
+
+&lt;p&gt;Here is an interesting video where Tom Scott from Computerphile talks about
+unicode and HOW we can fit almost all of the worlds written symbols into a single character encoding:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/MijmeoH9LT4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;you can check out computerphile&amp;#39;s youtube channel here:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA&quot;&gt;https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;#39;s a great show, I watch it all the time &lt;font size=&quot;3&quot;&gt;😋&lt;/font&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Nerdy stuff&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;For those interested, the smiley face above is a unicode symbol with &lt;br&gt;
+the utf-8 binary representation 11110000:10011111:10011000:10001011 &lt;br&gt;
+&lt;a href=&quot;http://www.fileformat.info/info/unicode/char/1f60b/index.htm&quot;&gt;See for yourself!&lt;/a&gt; &lt;br&gt;
+Lets calculate the unicode decimal codepoint for this character just as Tom does in the video:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    [11110]000:[10]011111:[10]011000:[10]001011
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;We can see the binary code is divided into 4 sections of 8 bits each.
+That is 4 bytes (1 byte = 8 bits).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Strip away the bits in box-quotes [ ]:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[11110] which are telling us that this character is represented by 4 bytes. (the number of ones).&lt;/li&gt;
+&lt;li&gt;[10] which means &lt;em&gt;&amp;quot;Please include me in the character!&amp;quot;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Now we are left with:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    000:011111:011000:001011
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;which in &lt;a href=&quot;http://www.binaryhexconverter.com/binary-to-decimal-converter&quot;&gt;Decimal numbers&lt;/a&gt; is 128523.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Wait look! &lt;a href=&quot;http://www.isthisthingon.org/unicode/index.phtml?glyph=1F60B&quot;&gt;Thats exactly our dear smiley character!&lt;/a&gt; (checkout the HTML column..)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now look.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;  &amp;lt;p&amp;gt; We can type &amp;amp;#128523; to display the smiley.&amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;OR we can copy paste the symbol itself: 😋&amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    Bonus: we can also type the
+    Hexademic representation of 128523 to get the smiley
+    face: &amp;amp;#x1f60b;
+  &amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Web development glossary</title>
+   <link href="http://tryggvigy.github.io/vefforritun/2014/08/31/web-development-glossary/"/>
+   <updated>2014-08-31T00:00:00+00:00</updated>
+   <id>http://tryggvigy.github.io/2014/08/31/web-development-glossary</id>
+   <content type="html">&lt;h2&gt;Glossary of terms&lt;/h2&gt;
+
+&lt;h3&gt;Markup languages&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SGML : &lt;a href=&quot;http://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language#XML&quot;&gt;Standard Generalized Markup Language - the mother of XML and HTML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;XML : &lt;a href=&quot;http://www.htmlgoodies.com/beyond/xml/article.php/3473531&quot;&gt;EXtensible Markup Language&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;HTML : &lt;a href=&quot;http://en.wikipedia.org/wiki/HTML&quot;&gt;HyperText Markup Language&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HTML element/tag :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;      &amp;lt;div&amp;gt;, &amp;lt;html&amp;gt;, &amp;lt;body&amp;gt;, lots more...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;attribute : &lt;a href=&quot;http://www.w3schools.com/html/html_attributes.asp&quot;&gt;A part of an element that provides additional information about that element.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Style sheet languages&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CSS : &lt;a href=&quot;http://www.w3.org/Style/CSS/Overview.en.html&quot;&gt;Cascading Style Sheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LESS : &lt;a href=&quot;http://lesscss.org/&quot;&gt;CSS extension language &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SASS : &lt;a href=&quot;http://sass-lang.com/&quot;&gt;Another CSS extension language&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Encoding&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ASCII : &lt;a href=&quot;http://www.computerhope.com/jargon/a/ascii.htm&quot;&gt;American Standard Code for Information Interchange - encoding standard.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Unicode : &lt;a href=&quot;http://www.unicode.org/standard/WhatIsUnicode.html&quot;&gt;Ubrella term for consistent encoding standards and the Unicode Consortium.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;UTF-8 : &lt;a href=&quot;http://en.wikipedia.org/wiki/UTF-8&quot;&gt;&amp;#39;U&amp;#39; from Universal Character Set + Transformation Format 8-bit - A specific way to encode all the characters in the Unicode character set.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Javascript&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;JS : &lt;a href=&quot;http://en.wikipedia.org/wiki/JavaScript&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;jQuery : &lt;a href=&quot;http://jquery.com/&quot;&gt;Very popular javascript library, mainly used for DOM manipulation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Miscellaneous&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the DOM : &lt;a href=&quot;http://css-tricks.com/dom/&quot;&gt;Document Object Model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PHP : &lt;a href=&quot;http://en.wikipedia.org/wiki/PHP&quot;&gt;Hypertext Preprocessor (original name was: Personal Home Page)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;W3C : &lt;a href=&quot;http://webdesign.about.com/od/w3c/a/what_is_w3c.htm&quot;&gt;World Wide Web Consortium&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Semantic html5 tags and how to use them.</title>
+   <link href="http://tryggvigy.github.io/vefforritun/2014/08/29/semantic-html5-tags-and-how-to-use-them/"/>
+   <updated>2014-08-29T00:00:00+00:00</updated>
+   <id>http://tryggvigy.github.io/2014/08/29/semantic-html5-tags-and-how-to-use-them</id>
+   <content type="html">&lt;h2&gt;What are semantic tags/elements?&lt;/h2&gt;
+
+&lt;p&gt;Here are a few examples of semantic html tags:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;  &amp;lt;header&amp;gt;, &amp;lt;nav&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;img&amp;gt;, &amp;lt;h1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Semantic tags clearly define the purpouse and meaning of the content they hold.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5&gt;In the codepen below is an example of semantic html code:&lt;/h5&gt;
+
+&lt;p data-height=&quot;500&quot; data-theme-id=&quot;8166&quot; data-slug-hash=&quot;qkEbt&quot; data-default-tab=&quot;html&quot; class='codepen'&gt;See the Pen &lt;a href='http://codepen.io/tryggvigy/pen/qkEbt/'&gt;qkEbt&lt;/a&gt; by Tryggvi Gylfason (&lt;a href='http://codepen.io/tryggvigy'&gt;@tryggvigy&lt;/a&gt;) on &lt;a href='http://codepen.io'&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;script async src=&quot;//codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;em&gt;check the Result tab to see the page&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2&gt;So what is NOT semantic HTML code?&lt;/h2&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;  &amp;lt;div&amp;gt;, &amp;lt;span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Some tags do not &amp;quot;tell&amp;quot; you anything about the content inside of them These
+tags are &amp;quot;non-semantic&amp;quot; or &amp;quot;presentation only&amp;quot; tags.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;There is nothing &lt;em&gt;wrong&lt;/em&gt; with using these tags and in fact can often be very
+useful and are widely used.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The reasoning behind using semantic HTML tags is to
+avoid &amp;quot;div-hell&amp;quot; on webpages (excessive use of the &lt;div&gt; tag.)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Lessons learned&lt;/h2&gt;
+
+&lt;p&gt;Think twice about the tags you use.&lt;/p&gt;
+
+&lt;p&gt;When writing HTML, try to use the tag that makes the most sense each time.
+This will make your code more readable
+and easier to manage.&lt;/p&gt;
+
+&lt;p&gt;Good luck with project 1!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Basic website</title>
+   <link href="http://tryggvigy.github.io/vefforritun/2014/08/29/basic-website/"/>
+   <updated>2014-08-29T00:00:00+00:00</updated>
+   <id>http://tryggvigy.github.io/2014/08/29/basic-website</id>
+   <content type="html">&lt;h2&gt;It&amp;#39;s simple to create a website.&lt;/h2&gt;
+
+&lt;p&gt;below you can see the most basic website that is able to display
+Icelandic characters.&lt;/p&gt;
+
+&lt;p&gt;&lt;div data-height=&quot;268&quot; data-theme-id=&quot;8166&quot; data-slug-hash=&quot;zJigd&quot; data-default-tab=&quot;html&quot; class='codepen'&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;basic site.&amp;lt;/title&amp;gt;
+    &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    æðifrábært!
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See the Pen &lt;a href='http://codepen.io/tryggvigy/pen/zJigd/'&gt;zJigd&lt;/a&gt; by Tryggvi Gylfason (&lt;a href='http://codepen.io/tryggvigy'&gt;@tryggvigy&lt;/a&gt;) on &lt;a href='http://codepen.io'&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;&lt;script async src=&quot;//codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Hello World!</title>
+   <link href="http://tryggvigy.github.io/vefforritun/2014/08/28/hello-world/"/>
+   <updated>2014-08-28T00:00:00+00:00</updated>
+   <id>http://tryggvigy.github.io/2014/08/28/hello-world</id>
+   <content type="html">&lt;h1&gt;Fyrsta Færslan&lt;/h1&gt;
+
+&lt;h3&gt;Hello World!&lt;/h3&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;CodePen prufa.&lt;/p&gt;
+
+&lt;p data-height=&quot;268&quot; data-theme-id=&quot;8166&quot; data-slug-hash=&quot;yemjt&quot; data-default-tab=&quot;result&quot; class='codepen'&gt;See the Pen &lt;a href='http://codepen.io/tryggvigy/pen/yemjt/'&gt;yemjt&lt;/a&gt; by Tryggvi Gylfason (&lt;a href='http://codepen.io/tryggvigy'&gt;@tryggvigy&lt;/a&gt;) on &lt;a href='http://codepen.io'&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;script async src=&quot;//codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+</content>
+ </entry>
+ 
+
+</feed>

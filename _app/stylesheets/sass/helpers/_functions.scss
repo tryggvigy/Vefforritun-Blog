@@ -1,0 +1,11 @@
+@function calc-percent($target, $container) {
+  @return ($target / $container) * 100%;
+}
+
+//functions are for logic.
+//use:
+/*
+.my-module {
+  width: calc-percent(650px, 1000px);
+}
+*/
