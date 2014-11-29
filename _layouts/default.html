@@ -1,0 +1,35 @@
+
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  {% include head.html %}
+
+<body>
+
+  <div class="wrapper">
+
+    {% include nav.html %}
+
+    <div id="container">
+      <p class="tagline">A blog about Vefforitun</p>
+      <div id="main" role="main">
+        {% include download-bar.html %}
+        <article class="markdown-body">
+          {{ content }}
+          {% include comments.html %}
+        </article>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </div>
+
+  {% include current-section.html %}
+
+  {% include google_analytics.html %}
+
+</body>
+</html>
